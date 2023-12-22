@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
+  --color-background-light: #{$color-background-light};
+  --color-background-dark: #{$color-background-dark};
+  --color-light: #{$color-light};
+
+  --font-primary: #{$font-primary};
+  --font-secondary: #{$font-secondary};
+
+  --color-font-primary: #{$color-font-primary};
+  --color-font-secondary: #{$color-font-secondary};
+
+  --color-background-button-primary: #{$color-primary};
+  --color-font-button-primary: #{$color-font-button-primary};
+
+  --color-background-button-secondary: #{$color-secondary};
+  --color-font-button-secondary: #{$color-font-button-secondary};
+
+
+  // Colors
+  --white: #{$white};
+  --black: #{$black};
+}

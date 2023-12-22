@@ -1,0 +1,218 @@
+<vp-header></vp-header>
+
+<vp-banner></vp-banner>
+
+<div class="container fadeInUp">
+  <div class="col-12 spacer-container d-flex align-items-center flex-sm-row flex-column">
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex justify-content-center">
+      <img src="assets/img/home/vp-1.png" alt="Cartão Vale Presente">
+    </div>
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex justify-content-center flex-column align-items-center align-items-sm-start">
+      <h2 class="title-box text-sm-left text-center">MAIS FÁCIL, SIMPLES E INTELIGENTE</h2>
+      <p>Com Vale Presente, fica muito mais fácil despertar o melhor em seus colaboradores e clientes. Soluções personalizadas, para qualquer situação.</p>
+      <vp-button [classButton]="'btn-primary'" [label]="'Solicitar Orçamento'" (functionSubmit)="enterMenu()"></vp-button>
+    </div>
+  </div>
+</div>
+
+<div class="container fadeInUp">
+  <div class="col-12 spacer-container d-flex align-items-center flex-sm-row flex-column">
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex justify-content-center flex-column align-items-center align-items-sm-start">
+      <h2 class="title-box text-sm-left text-center">CONSULTE SEU SALDO PELO APP</h2>
+      <p class="pb-2">O App Cartões Vale Presente funciona como uma carteira, onde você consegue adicionar seus cartões de maneira simples e organizada consultar seu saldo na palma da sua mão. Veja como é simples:</p>
+
+      <div class="col-lg-12 col-sm-12 col-xs-10 mt-4 d-flex">
+        <vp-app-instructions class="col-4" [label]="'Baixe o APP Cartões Vale Presente'" [urlImage]="'assets/img/home/app/ic-ios-android.svg'"></vp-app-instructions>
+        <vp-app-instructions class="col-4" [label]="'Cadastre seus dados básicos'" [urlImage]="'assets/img/home/app/ic-register-wallet.svg'"></vp-app-instructions>
+        <vp-app-instructions class="col-4" [label]="'Adicione seus cartões e pronto!'" [urlImage]="'assets/img/home/app/ic-add-cartao.svg'"></vp-app-instructions>
+      </div>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex justify-content-center">
+      <img src="assets/img/home/wallet-vp.png" alt="App Vale Presente">
+    </div>
+  </div>
+</div>
+
+<div class="container fadeInUp">
+  <div class="col-12 spacer-container d-flex align-items-center justify-content-center">
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center flex-column">
+      <h2 class="title-box text-center">INCENTIVO E PREMIAÇÃO</h2>
+      <p class="text-center">Cartões perfeitos para incentivar, motivar e premiar a sua equipe</p>
+      <img src="assets/img/home/vp-2.png" alt="Premiação">
+      <h3 class="my-4 text-center">CAMPANHAS COM CARGA ÚNICA OU RECARREGÁVEIS.</h3>
+      <vp-button [classButton]="'btn-primary'" [label]="'Solicitar Orçamento'" (functionSubmit)="enterMenu()"></vp-button>
+    </div>
+  </div>
+</div>
+
+<div class="container fadeInUp">
+  <div class="col-12 spacer-container d-flex align-items-center justify-content-center">
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center flex-column">
+      <h2 class="title-box text-center">CARTÕES PARA RECURSOS HUMANOS</h2>
+      <p class="text-center">Cartões para reconhecimento de colaboradores, em datas especiais, como:</p>
+      <img src="assets/img/home/vp-3.png" alt="Cartões RH">
+      <ul class="my-4 text-center pl-o">
+        <li><h4>Cesta de natal</h4></li>
+        <li><h4>Aniversários</h4></li>
+        <li><h4>Maternidade</h4></li>
+        <li><h4>Tempo de casa</h4></li>
+        <li><h4>Destaque do mês</h4></li>
+      </ul>
+      <vp-button [classButton]="'btn-primary'" [label]="'Solicitar Orçamento'" (functionSubmit)="enterMenu()"></vp-button>
+    </div>
+  </div>
+</div>
+
+<div class="container fadeInUp">
+  <div class="col-12 spacer-container d-flex align-items-center justify-content-center">
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center flex-column">
+      <h2 class="title-box text-center">CARTÕES PARA PROMOÇÕES</h2>
+      <p class="text-center">Cartões utilizados para premiar clientes. Perfeito para pequenas e grandes promoções.</p>
+      <img src="assets/img/home/hand-vp.png" alt="Promoções">
+      <h3 class="my-4 text-center">POSSIBILIDADE DE PERSONALIZAR A ARTE DOS CARTÕES.</h3>
+      <div class="col-12 d-flex justify-content-center flex-sm-row flex-column align-items-center">
+        <vp-button class="mx-2 mb-sm-0 mb-2" [classButton]="'btn-secondary'" [label]="'Simular estampa'" (functionSubmit)="enterMenu()"></vp-button>
+        <vp-button class="mx-2" [classButton]="'btn-primary'" [label]="'Solicitar Orçamento'" (functionSubmit)="enterMenu()"></vp-button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container fadeInUp">
+  <div class="col-12 spacer-container d-flex align-items-center justify-content-center">
+    <div class="col-lg-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center flex-column">
+      <h2 class="title-box text-center">FORMAS DE PRESENTEAR</h2>
+      <p class="text-center">Agora, a Vale Presente tem muito mais formas de fazer com que seu reconhecimento aconteça da melhor maneira possível. Confira abaixo nossas formas de presentear:</p>
+
+      <div class="col-lg-12 col-sm-12 col-xs-10 mt-2 d-flex justify-content-center">
+        <vp-app-instructions class="col-4" [label]="'Cartão físico'" [urlImage]="'assets/img/home/ic-cartao-fisico.svg'"></vp-app-instructions>
+        <vp-app-instructions class="col-4" [label]="'Cartão virtual'" [urlImage]="'assets/img/home/ic-cartao-virtual.svg'"></vp-app-instructions>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 box-clients fadeInUp">
+  <div class="col-12 spacer-container">
+    <div class="container mb-4 mt-4 d-flex align-items-center justify-content-center">
+      <div class="col-12 d-flex align-items-center justify-content-center flex-column">
+        <h2 class="title-box">NOSSOS CLIENTES</h2>
+        <p class="text-center">Confira abaixo alguns clientes que utilizam Vale Presente como solução:</p>
+
+        <div class="box-logo-clients d-flex flex-wrap justify-content-sm-between justify-content-center mb-4">
+          <img src="assets/img/home/clientes/johnson-johnson.png" alt="">
+          <img src="assets/img/home/clientes/natura.png" alt="">
+          <img src="assets/img/home/clientes/bk.png" alt="">
+          <img src="assets/img/home/clientes/mc.png" alt="">
+          <img src="assets/img/home/clientes/eurofarma.png" alt="">
+          <img src="assets/img/home/clientes/ambev.png" alt="">
+          <img src="assets/img/home/clientes/guarana.png" alt="">
+          <img src="assets/img/home/clientes/gillete.png" alt="">
+          <img src="assets/img/home/clientes/pg.png" alt="">
+          <img src="assets/img/home/clientes/kelloggs.png" alt="">
+        </div>
+
+        <vp-button class="mt-4" [classButton]="'btn-primary'" [label]="'Solicitar Orçamento'" (functionSubmit)="enterMenu()"></vp-button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-4 mt-4 d-flex align-items-center justify-content-center fadeInUp" id="formValePresente">
+  <div class="col-12 spacer-container d-flex align-items-center justify-content-center flex-column">
+    <h2 class="title-box text-center">Conheça a Vale Presente</h2>
+    <p class="text-center pb-4">Preencha o formulário e fale com um consultor</p>
+
+    <div class="col-lg-8 col-sm-8 col-xs-12">
+      <form class="w-100" [formGroup]="formContact">
+
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <input type="text" matInput placeholder="Insira seu nome" formControlName="name">
+            <mat-error>Nome é obrigatório</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email corporativo:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <input type="email" matInput placeholder="Insira seu email corporativo" formControlName="email">
+            <mat-error *ngIf="formContact.get('email')?.hasError('required')">Email é obrigatório</mat-error>
+            <mat-error *ngIf="formContact.get('email')?.hasError('email')">Informe um email correto</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="office">Cargo:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <input type="text" matInput placeholder="Insira seu cargo" formControlName="office">
+            <mat-error>Cargo é obrigatório</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefone:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <input type="number" maxlength="11" matInput placeholder="DDD+Telefone" formControlName="phone">
+            <mat-error *ngIf="formContact.get('phone')?.hasError('required')">Telefone é obrigatório</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="company">Empresa:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <input type="text" matInput placeholder="Insira o nome da sua empresa" formControlName="company">
+            <mat-error>Empresa é obrigatório</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="companyFederalId">CNPJ:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <input minlength="14" maxlength="14" type="text" matInput placeholder="Insira o CNPJ da sua empresa" formControlName="companyFederalId">
+            <mat-error *ngIf="formContact.get('companyFederalId')?.hasError('required')">CNPJ é obrigatório</mat-error>
+            <mat-error *ngIf="formContact.get('companyFederalId')?.hasError('minlength')">O CNPJ deve conter 14 números</mat-error>
+            <mat-error *ngIf="formContact.get('companyFederalId')?.invalid">Informe um CNPJ válido (apenas números)</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="workersNumber">Número de Colaboradores:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <input type="number" matInput placeholder="Insira o número de colaboradores da sua empresa" formControlName="workersNumber">
+            <mat-error>Número de colaboradores é obrigatório</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem:</label>
+          <mat-form-field appearance="outline" class="col-12">
+            <textarea matInput placeholder="Insira sua mensage" formControlName="message"></textarea>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <mat-checkbox formControlName="terms" (change)="checkTerms($event.checked)">
+            <p class="text-wrap m-0">
+              Concordo em receber comunicações e estou de acordo com a Política de Privacidade e com os Termos de Uso da Vale Presente.
+            </p>
+          </mat-checkbox>
+        </div>
+
+        <div class="col-12 mt-4 mb-4 d-flex justify-content-center">
+          <a class="mx-2" href="https://valepresente.com.br/tarifas.html?termos" alt="Termos" target="_blank">Termos de uso</a>
+          <a class="mx-2" href="https://valepresente.com.br/upload/doc_10-08/politica%20de%20Privacidade%20-%20Vale%20Presente.pdf" alt="Política de Privacidade" target="_blank">Política de Privacidade</a>
+        </div>
+
+      </form>
+    </div>
+
+    <vp-button class="mt-4" [classButton]="'btn-primary'" [valid]="buttonEnable" [label]="'Solicitar Orçamento'" (functionSubmit)="sendMail()"></vp-button>
+
+  </div>
+</div>
+
+
+<vp-footer></vp-footer>

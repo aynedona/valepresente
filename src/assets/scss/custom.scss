@@ -1,0 +1,64 @@
+@import '~node_modules/bootstrap/scss/bootstrap';
+
+* {
+  font-family: $font-primary;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.btn-primary {
+	border-color: var(--color-background-button-primary);
+	background-color: var(--color-background-button-primary);
+	color: var(--color-font-button-primary);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.btn-default:visited,
+.btn-primary:disabled {
+	color: var(--color-font-button-primary);
+}
+
+.btn-secondary {
+	border-color: var(--color-background-button-secondary);
+	background-color: var(--color-background-button-secondary);
+	color: var(--color-font-button-secondary);
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.btn-default:visited,
+.btn-secondary:disabled {
+	color: var(--color-font-button-secondary);
+}
+
+
+/* MATERIAL */
+.mat-form-field-infix {
+  border-top: 0;
+}
+
+/* fade */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

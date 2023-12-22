@@ -1,0 +1,39 @@
+<header>
+  <div class="container d-flex align-items-center p-0">
+    <nav class="navbar navbar-expand-lg w-100">
+      <div class="container-fluid p-0">
+        <div class="col-2 box-logo">
+          <a href="/home" alt="Link página principal">
+            <img src="/assets/img/header/logo-header.svg" alt="Logo Vale Presente" title="Logo Vale Presente">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-between" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="sobre-nos">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="para-pessoas">Para pessoas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Para empresas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vale-presente">Vale Presente</a></li>
+                <li><a class="dropdown-item" href="vale-benefício">Vale Benefício</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="box-actions">
+            <vp-button class="mx-2" [classButton]="'btn-primary'" [label]="'Entrar'" (functionSubmit)="enterMenu()"></vp-button>
+            <vp-button [classButton]="'btn-secondary'" [label]="'Abra sua conta'" (functionSubmit)="enterMenu()"></vp-button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
