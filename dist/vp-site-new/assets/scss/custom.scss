@@ -1,5 +1,9 @@
 @import '~node_modules/bootstrap/scss/bootstrap';
 
+* {
+  font-family: $font-primary;
+}
+
 h1 {
   font-size: 24px;
 }
@@ -39,3 +43,22 @@ h4 {
 .btn-secondary:disabled {
 	color: var(--color-font-button-secondary);
 }
+
+
+/* MATERIAL */
+.mat-form-field-infix {
+  border-top: 0;
+}
+
+/* fade */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
