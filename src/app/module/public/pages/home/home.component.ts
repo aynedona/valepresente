@@ -1,4 +1,4 @@
-import { Component, ErrorHandler, HostListener, OnInit } from '@angular/core';
+import { Component, ErrorHandler, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CpfCnpjValidator } from '../../directives/cpf-cnpj/cpf-cnpj.validator';
 import { SiteService } from '../../service/site.service';
@@ -77,9 +77,12 @@ export class HomeComponent implements OnInit {
         next: (res: any) => {
           this.toastr.success('Os dados foram enviados com sucesso! Em breve um de nossos especialistas entrará em contato.');
         },
-        error: () => {
-          console.log('error')
-          this.toastr.error('Não foi possível enviar os dados. Tente novamente mais tarde.');
+        error: (er) => {
+          if(er.error.errors[0].type == "thereIsAlreadyAnActiveProspectionWithThisLead") {
+            this.toastr.error('Este lead já está cadastrado em nossa base. Aguarde! Em breve entraremos em contato.');
+          } else {
+            this.toastr.error('Não foi possível enviar os dados. Tente novamente mais tarde.');
+          }
         }
       });
     } else {

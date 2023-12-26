@@ -20,7 +20,11 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     SharedModule,
     HttpClientModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      closeButton: true,
+      timeOut: 10000,
+      progressBar: true,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,7 +27,6 @@ export function CpfCnpjValidator(): ValidatorFn {
       }
       return null;
     } else {
-      console.log('invalido')
       return {
         CpfCnpjValidator: {
           valid: false,
