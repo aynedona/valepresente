@@ -155,7 +155,7 @@
         <div class="form-group">
           <label for="phone">Telefone:</label>
           <mat-form-field appearance="outline" class="col-12">
-            <input type="number" maxlength="11" matInput placeholder="DDD+Telefone" formControlName="phone">
+            <input type="text" maxlength="11" matInput placeholder="DDD+Telefone" formControlName="phone">
             <mat-error *ngIf="formContact.get('phone')?.hasError('required')">Telefone é obrigatório</mat-error>
           </mat-form-field>
         </div>
@@ -181,7 +181,7 @@
         <div class="form-group">
           <label for="workersNumber">Número de Colaboradores:</label>
           <mat-form-field appearance="outline" class="col-12">
-            <input type="number" matInput placeholder="Insira o número de colaboradores da sua empresa" formControlName="workersNumber">
+            <input type="text" matInput placeholder="Insira o número de colaboradores da sua empresa" formControlName="workersNumber">
             <mat-error>Número de colaboradores é obrigatório</mat-error>
           </mat-form-field>
         </div>
