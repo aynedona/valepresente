@@ -2,6 +2,7 @@ import { Component, ErrorHandler, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CpfCnpjValidator } from '../../directives/cpf-cnpj/cpf-cnpj.validator';
 import { SiteService } from '../../service/site.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'vp-home',
@@ -15,7 +16,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private siteService: SiteService,
-    private errorHandler: ErrorHandler
+    private errorHandler: ErrorHandler,
+    private toastr: ToastrService
   ) { }
 
   ngOnInit(): void {
@@ -57,7 +59,6 @@ export class HomeComponent implements OnInit {
   public sendMail() {
     if (!this.formContact.invalid) {
       let dataForm = this.formContact.value
-      console.log('values2', dataForm)
       const data = {
         name: dataForm.name,
         email: dataForm.email,
@@ -71,24 +72,18 @@ export class HomeComponent implements OnInit {
         },
       };
 
-      console.log('data', data)
-
-      // this.siteService.sendForm(data).pipe(
-      //   tap((res: any) => {
-      //     console.log('res', res)
-      //   })
-      // ).subscribe();
 
       this.siteService.sendForm(data).subscribe({
         next: (res: any) => {
-          console.log('res', res)
+          this.toastr.success('Os dados foram enviados com sucesso! Em breve um de nossos especialistas entrará em contato.');
         },
         error: () => {
           console.log('error')
+          this.toastr.error('Não foi possível enviar os dados. Tente novamente mais tarde.');
         }
       });
     } else {
-      console.log('inválido',this.formContact.value)
+      this.toastr.error('Preencha os dados corretamente.');
       return;
     }
 

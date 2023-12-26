@@ -35,6 +35,7 @@
             ],
             "styles": [
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/ngx-toastr/toastr.css",
 							"src/assets/scss/styles.scss"
             ],
             "scripts": [
@@ -107,7 +108,8 @@
               "src/assets"
             ],
             "styles": [
-							"src/assets/scss/styles.scss"
+							"src/assets/scss/styles.scss",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
